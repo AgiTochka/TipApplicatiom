@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="images/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="left-block">
+      <div class="bill">
+        <p>Bill</p>
+        <label id="error-bill"></label>
+        <div id="bill-input" >
+          <img src="./img/icon-dollar.svg">
+          <input type='text' id="bill" placeholder="0">
+        </div>
+
+      </div>
+
+      Select Tip %
+      <div class="percent">
+        <input type="button" class="percentButton" value="5%">
+        <input type="button" class="percentButton" value="10%">
+        <input type="button" class="percentButton" value="15%">
+        <input type="button" class="percentButton" value="25%">
+        <input type="button" class="percentButton" value="50%">
+        <input type='text' id="custom"  placeholder="Custom">
+      </div>
+      <div class="number-people">
+        <p>
+          Number of People
+        </p>
+        <label id="error-number"></label>
+        <div id="number-input">
+          <img src="./img/icon-person.svg">
+          <input type='text' id="number-people" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div id="right-block">
+      <div class="tip">
+        <p>
+          <b>Tip Amount</b><br>
+          / person
+        </p>
+        <label id="tip">$0.00</label>
+      </div>
+
+      <div class="total">
+        <p>
+          <b>Total</b><br>
+          / person
+        </p>
+        <label id="total">$0.00</label>
+      </div>
+
+
+      <button id="reset">RESET</button>
+    </div>
+
+
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

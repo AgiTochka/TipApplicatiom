@@ -1,0 +1,236 @@
+:root {
+    --sc: hsl(172, 67%, 45%);
+    --vdc: hsl(183, 100%, 15%);
+    /*Very dark cyan*/
+    --dgc1: hsl(186, 14%, 43%);
+    --dgc2: hsl(184, 14%, 56%);
+    --lgc1: hsl(185, 41%, 84%);
+    --lgc2: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --inp: hsl(184, 19%, 68%);
+    --btn: hsl(183, 79%, 24%);
+    --btnact: hsl(173, 61%, 77%);
+    --font: 'Space Mono', monospace;
+
+
+}
+
+
+.border-error{
+    border: 1px solid red !important;
+}
+.border-focus{
+    border: 1px solid var(--sc) !important;
+}
+.button-active{
+    background-color: var(--btnact)!important;
+    color:var(--vdc)!important;
+}
+.button-focus{
+    background-color: var(--sc)!important;
+    color: var(--vdc)!important;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 12%;
+}
+
+#main {
+    position: relative;
+    font-family: var(--font);
+    color: var(--dgc1);
+    font-weight: 700;
+    font-size: 10px;
+    width: 42%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+#main:before{
+    content: "";
+    display: block;
+    padding-top: 50.25%;
+}
+
+#left-block {
+    width: 48%;
+    padding-right: 10px;
+}
+
+#bill-input,
+#number-input {
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+    background-color: var(--lgc2);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--lgc2);
+    
+}
+
+#bill-input img {
+    width: 8px;
+    height: 14px;
+    align-self: center;
+
+}
+
+#number-input img {
+    width: 10px;
+    height: 14px;
+    align-self: center;
+}
+
+#bill,
+#number-people {
+    font-family: var(--font);
+    color: var(--vdc);
+    font-weight: 700;
+    width: 92%;
+    background-color: var(--lgc2);
+    border: 0;
+    text-align: right;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--inp);
+    font-weight: 700;
+}
+
+.bill {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.percent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.percentButton {
+    width: 31%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--vdc);
+    border: 0;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+
+#custom {
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--lgc2);
+    border: 0;
+    border-radius: 5px;
+    text-align: right;
+    outline: none;
+    font-family: var(--font);
+    color: var(--vdc);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--lgc2);
+}
+
+.percent input::-webkit-input-placeholder {
+    color: var(--dgc1);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.number-people {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#right-block {
+    width: 43%;
+    margin-left: auto;
+    padding-left: 10px;
+    background-color: var(--vdc);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tip,
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip label,
+.total label {
+    align-self: center;
+    font-size: 32px;
+    color: var(--sc);
+}
+
+#right-block p b {
+    color: var(--white);
+}
+
+#right-block p {
+    align-self: center;
+    color: var(--dgc2);
+    font-weight: 400;
+    font-size: 8px;
+}
+
+
+#reset {
+    margin-top: 53%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--btn);
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--vdc);
+    cursor: pointer;
+}
+
+
+#error-number,
+#error-bill {
+    color: red;
+    margin-left: auto;
+    align-self: center;
+}
+
