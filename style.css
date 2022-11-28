@@ -14,6 +14,10 @@
 
 
 }
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
 .border-error{
@@ -60,6 +64,7 @@ body {
     padding-top: 50.25%;
 }
 
+
 #left-block {
     width: 48%;
     padding-right: 10px;
@@ -68,7 +73,7 @@ body {
 #bill-input,
 #number-input {
     display: flex;
-    width: 93%;
+    width: 100%;
     justify-content: space-between;
     background-color: var(--lgc2);
     padding-top: 2px;
@@ -98,7 +103,7 @@ body {
     font-family: var(--font);
     color: var(--vdc);
     font-weight: 700;
-    width: 92%;
+    width: 100%;
     background-color: var(--lgc2);
     border: 0;
     text-align: right;
@@ -234,3 +239,44 @@ input::-webkit-input-placeholder {
     align-self: center;
 }
 
+@media screen and (max-width: 480px) {
+    #main{
+        width:95%;
+        flex-direction: column;
+    }
+    #left-block{
+        width: 100%;
+    }
+    #right-block{
+        width: 100%;
+    }
+    #main::before{
+        padding-top: 0cm;
+    }
+    #reset{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #main{
+        width:70%;
+        flex-direction: column;
+    }
+    #left-block{
+        width: 100%;
+    }
+    #right-block{
+        width: 100%;
+    }
+    #main::before{
+        padding-top: 0cm;
+    }
+    #reset{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #main{
+        width:70%;
+    }
+}
